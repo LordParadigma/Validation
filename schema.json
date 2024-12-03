@@ -25,15 +25,7 @@
                 "Telefax": { "type": "string" },
                 "Mail-Adresse": { "type": "string", "format": "email" }
             },
-            "required": [
-                "Anrede",
-                "Familienname",
-                "Vorname",
-                "Strasse",
-                "Plz",
-                "Ort",
-                "Land"
-            ]
+            "required": ["Anrede", "Familienname", "Vorname", "Strasse", "Plz", "Ort", "Land"]
         },
         "teilnehmer": {
             "type": "array",
