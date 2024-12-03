@@ -1,0 +1,23 @@
+{
+  "info": {
+    "erstellt": "1568-12-21",
+    "verein": "FC Sigmaballs",
+    "ipaddresse": "192.128.2.1"
+  },
+  "anmeldung": {
+    "Anrede": "Frau",
+    "Familienname": "Emma",
+    "Vorname": "Watson",
+    "Strasse": "Sigmastreet 69420",
+    "Plz": "6971",
+    "Ort": "Hard",
+    "Land": "Österreich",
+    "Telefon": "",
+    "Telefax": "",
+    "Mail-Adresse": "EmmaWatson@Sigma.com"
+  },
+  "teilnehmer": [
+    { "Nachname": "Rizzler", "Vorname": "Obama", "Altersklasse": "Jung", "Klasse": "4aWI", "Startzeit": "Vormittag" },
+    { "Nachname": "Rizzler", "Vorname": "Trump", "Altersklasse": "Alt", "Klasse": "4aWI", "Startzeit": "Nachmittag" }
+  ]
+}

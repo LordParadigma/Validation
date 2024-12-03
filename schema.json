@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "info": {
+            "type": "object",
+            "properties": {
+                "erstellt": { "type": "string", "format": "date" },
+                "verein": { "type": "string" },
+                "ipaddresse": { "type": "string", "format": "ipv4" }
+            },
+            "required": ["erstellt", "verein", "ipaddresse"]
+        },
+        "anmeldung": {
+            "type": "object",
+            "properties": {
+                "Anrede": { "type": "string" },
+                "Familienname": { "type": "string" },
+                "Vorname": { "type": "string" },
+                "Strasse": { "type": "string" },
+                "Plz": { "type": "string", "pattern": "^\\d{4,5}$" },
+                "Ort": { "type": "string" },
+                "Land": { "type": "string" },
+                "Telefon": { "type": "string" },
+                "Telefax": { "type": "string" },
+                "Mail-Adresse": { "type": "string", "format": "email" }
+            },
+            "required": [
+                "Anrede",
+                "Familienname",
+                "Vorname",
+                "Strasse",
+                "Plz",
+                "Ort",
+                "Land"
+            ]
+        },
+        "teilnehmer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Nachname": { "type": "string" },
+                    "Vorname": { "type": "string" },
+                    "Altersklasse": { "type": "string" },
+                    "Klasse": { "type": "string" },
+                    "Startzeit": { "type": "string", "enum": ["Vormittag", "Nachmittag"] }
+                },
+                "required": ["Nachname", "Vorname", "Altersklasse", "Klasse", "Startzeit"]
+            }
+        }
+    },
+    "required": ["info", "anmeldung", "teilnehmer"]
+}
